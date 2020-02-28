@@ -4,8 +4,8 @@ Small Mix project that runs through Hex Bob's built Alpine images in GitHub CI
 
 The main files of interest are:
 
-* [./.github/workflows/ci.yml]
-* [./mix.exs]
+* [./.github/workflows/ci.yml](./.github/workflows/ci.yml)
+* [./mix.exs](./mix.exs)
 
 It also assumes you're using asdf to manage your local versions of Elixir during
 development.
