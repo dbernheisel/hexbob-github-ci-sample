@@ -48,6 +48,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
+      # Don't include this line in your own tests:
+      fail-fast: false
       matrix:
         elixir_version:
           - 1.4.5-erlang-19.3.6-alpine-3.11.3
