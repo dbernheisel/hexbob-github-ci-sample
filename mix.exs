@@ -49,9 +49,8 @@ defmodule AlpineTest.MixProject do
   end
 
   defp typespecs(commands \\ []) do
-    # For some reason, typespecs on 20 spin forever, so restrict to 21+
     commands
-    |> add_if("dialyzer", Version.match?(System.otp_release() <> ".0.0", ">= 21.0.0"))
+    |> add_if("dialyzer", ">= 1.6.0")
   end
 
   @plt_path Path.join(["priv", "plts"])
